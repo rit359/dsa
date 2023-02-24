@@ -1,4 +1,5 @@
 var twoSum = function(arr, target) {
+     // sorting asending order first
      for (let j = 0; j < arr.length - 1; j++) {
             if (arr[j] > arr[j + 1]) {
                  let temp = arr[j];
@@ -7,6 +8,7 @@ var twoSum = function(arr, target) {
                 j = -1;
             }
         }
+    // take two pointer left & rigth if sum greter than target then decrease right & when sum less than target then increase left , third check for sum equals target
     let left =0;
      let right = arr.length -1;
      while(left < right){
