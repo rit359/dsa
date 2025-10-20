@@ -25,3 +25,24 @@ var twoSum = function(arr, target) {
     }
     }
 };
+
+
+//Two sum using map
+
+function twoSum(arr, target){
+    const map = new Map();
+    for(let i =0; i<arr.length; i++){
+    const calculateSum = target - arr[i];
+    
+    if(map.has(calculateSum)){
+        return [map.get(calculateSum),i];
+    }
+    map.set(arr[i],i);
+}
+console.log(map)
+return -1
+}
+
+const arr = [2,9,7,11,12,15,23];
+const target = 9;
+console.log(twoSum(arr, target));
