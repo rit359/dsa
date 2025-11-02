@@ -1,3 +1,7 @@
+/**
+ Factory Design Pattern - is a creational design pattern that provides a way to create objects without exposing the creation logic to the client.
+Instead of using the new keyword directly, the client calls a factory method, which decides which subclass or object to create.
+*/
 class Payment {
   processPayment() {
     throw new Error("processPayment() must be implemented");
